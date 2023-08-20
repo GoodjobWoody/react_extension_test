@@ -4,19 +4,19 @@
   "description": "Base Level Extension",
   "version": "1.0",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "../chrome_extension/popup.html"
   },
   "permissions": ["activeTab", "declarativeContent", "activeTab", "scripting"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["modalStyles.css"]
+      "js": ["../chrome_extension/content.js"],
+      "css": ["../chrome_extension/modalStyles.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["resume.html"],
+      "resources": ["../chrome_extension/resume.html"],
       "matches": ["<all_urls>"]
     }
   ]
